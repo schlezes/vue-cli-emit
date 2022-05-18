@@ -4,11 +4,13 @@ Using Vue $emit to send-up A.vue component props for App.vue parent access
 
 I have a very simple example for $emit working with the App.vue parent.
 
-Here is the HTML render shown with a screen shot.
+With a click event on the A.vue component, the parent App.vue methods has access to the A.vue properties and in this case expands the width property by 1.25 times.
 
-![image](https://user-images.githubusercontent.com/89032071/168940675-b8888c83-670e-4c5e-abe3-f85c26a9c388.png)
+Here is the HTML render shown with a screenshot.
 
-and the App.vue screenshot.
+![image](https://user-images.githubusercontent.com/89032071/169065839-2fbd32b2-d623-4d97-8795-e49e6328bab8.png)
+
+and the App.vue parent screenshot.
 
 ![image](https://user-images.githubusercontent.com/89032071/168940818-d4032a06-e46f-405f-970a-839e4897a219.png)
 
@@ -27,3 +29,7 @@ I have console.logged the several A.vue properties attached to the A.vue compone
 The key to success is by way of the chg() $emit, $event.target that is passed upward from the child A.vue and made available in the methods: log() function in the parent App.vue.
 
 There is a 2nd component, B.vue component that just serves as a placeholder.  No $emits on this component.
+
+With the B.vue component a click event will also expand the width by 1.25 times; however, in this case, the click event render method is held internally to the B.vue component.
+
+

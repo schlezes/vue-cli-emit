@@ -34,4 +34,8 @@ There is a 2nd component, B.vue component, that just serves as a placeholder.  T
 
 With the B.vue component, a click event will also expand the width by 1.25 times and reset the backgroundColor to orange.
 
+The App.vue, A.vue and B.vue files are enclosed.
+
+These can be copied and pasted into your own Vue cli environment.
+
 
